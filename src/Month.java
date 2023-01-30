@@ -1,5 +1,5 @@
 public class Month {
-   public int showNomOfDays(int month){
+   public void showNomOfDays(int month){
        int result;
        switch (month){
            case 1:
@@ -23,6 +23,7 @@ public class Month {
            default:
                result = 0;
        }
-       return result;
+       System.out.println("The number of days in this month is " + result);
+
    }
 }
