@@ -2,21 +2,24 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int sumOfThree(int num) {
+    public static void sumOfThree(int num) {
         int first = num / 100;
         int second = (num - (first * 100)) / 10;
         int third = num - (first * 100 + second * 10);
-        return first + second + third;
+        System.out.println(first + second + third);
     }
 
-    public static int sumOfThree(String a, String b) {
+    public static void sumOfThree(String a, String b) {
         int w1 = a.length();
         int w2 = b.length();
-        return w1 + w2;
+        System.out.println(w1 + w2);
     }
 
-    public static boolean sumOfThree(String a) {
-        int b = Integer.parseInt(a);
+    public static boolean sumOfThree() {
+        System.out.println("Enter number: ");
+        Scanner scanner = new Scanner(System.in);
+        String numberFromConsoleFirst = scanner.nextLine();
+        int b = Integer.parseInt(numberFromConsoleFirst);
         boolean result;
         if (b > 0) {
             System.out.println("Число > 0");
@@ -88,16 +91,9 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int result = sumOfThree(224);
-        System.out.println(result);
-        int resultSecond = sumOfThree("sky", "blue");
-        System.out.println(resultSecond);
-
-        System.out.println("Enter number: ");
-        Scanner scanner = new Scanner(System.in);
-        String numberFromConsoleFirst = scanner.nextLine();
-        sumOfThree(numberFromConsoleFirst);
-
+        sumOfThree(224);
+        sumOfThree("sky", "blue");
+        sumOfThree();
         String resultWord = theMaxLengthOfAWord("Sun", "Flower", "Butterfly");
         System.out.println("The longest word is " + resultWord);
 
