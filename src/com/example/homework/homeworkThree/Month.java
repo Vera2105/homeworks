@@ -1,3 +1,5 @@
+package com.example.homework.homeworkThree;
+
 public class Month {
    public void showNomOfDays(int month){
        int result;

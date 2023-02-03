@@ -1,3 +1,5 @@
+package com.example.homework.homeworkThree;
+
 public class HomeworkThree {
 
     public void theMaxLengthOfAWord(String a, String b, String c) {
