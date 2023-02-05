@@ -1,3 +1,5 @@
+package com.example.homework.homeworkTwo;
+
 import java.util.Scanner;
 
 public class HomeworkTwo {
