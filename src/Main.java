@@ -1,3 +1,4 @@
+import com.example.homework.homeworkFive.HomeworkFive;
 import com.example.homework.homeworkThree.HomeworkThree;
 import com.example.homework.homeworkTwo.HomeworkTwo;
 
@@ -7,5 +8,7 @@ public class Main {
         homeworkTwo.execution();
         HomeworkThree homeworkThree = new HomeworkThree();
         homeworkThree.execution();
+        HomeworkFive homeworkFive = new HomeworkFive();
+        homeworkFive.execution();
     }
 }
